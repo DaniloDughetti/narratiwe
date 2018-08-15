@@ -1,0 +1,110 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <img class="welcome-img" src="assets/images/welcome-logo.png">
+        </div>
+
+        <div class="col-sm-6">
+
+            <!--INCRIMINATO-->
+            <div id="login">
+                <div class="form-wrap">
+                    <img class="text-logo" src="assets/images/text-logo.png" class ="text-logo">
+                    <h2>Where milions stories are ready to be written</h2>
+
+                    <!--FORM SIGNIN-->
+                    <form [formGroup]="userForm" *ngIf="newUser" (ngSubmit)="signIn()" id="login-form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input placeholder="Email" type="email" id="email" class="input" class="form-control" formControlName="email" required>
+
+                            <div *ngIf="formErrors.email" class="alert alert-danger alert-custom" role="alert">
+                                {{ formErrors.email }}
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="key" class="sr-only">Password</label>
+                            <input placeholder="Password" type="password" id="password" class="input" class="form-control" formControlName="password"
+                                required>
+
+                            <div *ngIf="formErrors.password" class="alert alert-danger alert-custom" role="alert">
+                                {{ formErrors.password }}
+                            </div>
+
+                        </div>
+                        <button *ngIf="!buttonSignInLoading" type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Sign in">Sign in</button>
+                        <button *ngIf="buttonSignInLoading" type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Sign in"
+                            disabled="true">
+                            <i class='fa fa-circle-o-notch fa-spin'></i>
+                        </button>
+                       
+                        <button  class="btn btn-custom btn-lg btn-block btn-facebook" value="Log In" type="button" (click)="facebookLogin()"><i class="fa fa-facebook" aria-hidden="true"></i> Log in with Facebook</button>
+                        <button  class="btn btn-custom btn-lg btn-block btn-google" value="Log In" type="button" (click)="googleLogin()"><i class="fa fa-google" aria-hidden="true"></i> Log in with Google</button>
+                        
+                        <div *ngIf="loginError" class="alert alert-danger alert-custom" role="alert">
+                            {{ loginError }}
+                        </div>
+                      <!--  <a class="conditions" (click)="showDialog()">If you subscrive to our service you'll agree to our conditions and privacy</a>
+                        <br>-->
+                        <a class="btn btn-secondary" (click)="toggleForm()">Already Registered?</a>
+                    </form>
+                    <!--/FORM SIGNIN-->
+
+                    <!--FORM LOGIN-->
+                    <form [formGroup]="userForm" *ngIf="!newUser" (ngSubmit)="login()" id="login-form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input placeholder="Email" type="email" id="email" class="input" class="form-control" formControlName="email" required>
+
+                            <div *ngIf="formErrors.email" class="alert alert-danger alert-custom" role="alert">
+                                {{ formErrors.email }}
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="key" class="sr-only">Password</label>
+                            <input placeholder="Password" type="password" id="password" class="input" class="form-control" formControlName="password"
+                                required>
+
+                            <div *ngIf="formErrors.password" class="alert alert-danger alert-custom" role="alert">
+                                {{ formErrors.password }}
+                            </div>
+
+                        </div>
+                        <button *ngIf="!buttonLogInLoading" type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log In">Log In</button>
+                        <button *ngIf="buttonLogInLoading" type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block disabled" value="Log In"
+                            disabled="true">
+                            <i class='fa fa-circle-o-notch fa-spin'></i>
+                        </button>
+                        <button  class="btn btn-custom btn-lg btn-block btn-facebook" value="Log In" type="button" (click)="facebookLogin()"><i class="fa fa-facebook" aria-hidden="true"></i> Log in with Facebook</button>
+                        <button  class="btn btn-custom btn-lg btn-block btn-google" value="Log In" type="button" (click)="googleLogin()"><i class="fa fa-google" aria-hidden="true"></i> Log in with Google</button>
+                        
+                        <div *ngIf="loginError" class="alert alert-danger alert-custom" role="alert">
+                            {{ loginError }}
+                        </div>
+                        <a class="btn btn-secondary" (click)="toggleForm()">Don't you have an account? Join now!</a>
+                    </form>
+                    <!--/FORM LOGIN-->
+
+                    
+                    <hr>
+                </div>
+
+                <div id="footer">
+                    <div class="row">
+                        <div class="col">
+                            <div class="footer-content">
+                                <p>Narratiwe - 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->

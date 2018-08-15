@@ -1,0 +1,38 @@
+<div class="container comment-item-container">
+  <div class="row">
+    <div class="col-xs-12 col-md-3 col-lg-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-3 col-md-3 col-lg-3">
+            <img *ngIf="profileImage" [src]="profileImage" class="img-responsive img-circle img-profile user-link" (click)="viewUser()"
+              alt="Profile image">
+          </div>
+          <div class="col-xs-9 col-md-9 col-lg-9">
+            <b class="comment-user user-link" (click)="viewUser()" *ngIf="!user.showNickname && userNameCondition">{{user.name}} {{user.surname}}</b>
+            <b class="comment-user user-link" (click)="viewUser()" *ngIf="!user.showNickname && !userNameCondition">{{user.email}}</b>
+            <b class="comment-user user-link" (click)="viewUser()" *ngIf="user.showNickname && user.nickname">{{user.nickname}}</b>
+            <b class="comment-user user-link" (click)="viewUser()" *ngIf="user.showNickname && !user.nickname">{{user.email}}</b>
+            <p *ngIf="!isEditShow" class="comment-date">{{chapterComment.dateEditing | date}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-8 col-lg-8" *ngIf="!isEditable">
+      <p class="comment-content">{{chapterComment.content}}</p>
+      <p class="comment-date">{{chapterComment.dateEditing | date}}</p>
+    </div>
+    <div class="col-xs-12 col-md-8 col-lg-8" *ngIf="isEditable">
+      <form class="edit-profile-form">
+        <mat-form-field class="comment-form" *ngIf="isEditShow">
+          <textarea matInput placeholder="{{commentLabel}}" [(ngModel)]="chapterComment.content" name="content"></textarea>
+        </mat-form-field>
+
+        <p *ngIf="!isEditShow" class="comment-content">{{chapterComment.content}}</p>
+
+        <button mat-button *ngIf="!isEditShow" class="comment-button" color="primary" type="button" (click)="showEditComment()">Edit</button>
+        <button mat-button *ngIf="isEditShow" class="comment-button" color="primary" type="button" (click)="editComment()">Done</button>
+        <button mat-button *ngIf="isEditShow" class="comment-button" color="primary" type="button" (click)="deleteComment()">Delete</button>
+      </form>
+    </div>
+  </div>
+</div>

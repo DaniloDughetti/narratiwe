@@ -1,0 +1,10 @@
+<h2 mat-dialog-title *ngIf="data.isPublished">Are you sure to remove from market {{data.title}}?</h2>
+<h2 mat-dialog-title *ngIf="!data.isPublished">Are you sure to publish {{data.title}}?</h2>
+<mat-dialog-content>
+  <p *ngIf="data.isPublished">Removing from market this private story you will disble every user on Creatiwe to read, comment a rate your story.</p>
+  <p *ngIf="!data.isPublished">Publishing this private story you will enable every user on Creatiwe to read, comment a rate your story.</p>  
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="true" tabindex="1">Confirm</button>
+  <button mat-button [mat-dialog-close]="false" tabindex="-1">Cancel</button>
+</mat-dialog-actions>

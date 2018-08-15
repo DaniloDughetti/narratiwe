@@ -1,0 +1,182 @@
+/*    --------------------------------------------------
+	:: Login Section
+    -------------------------------------------------- */
+    #login {
+        padding-top: 25px
+    }
+
+    #login h1 {
+        color: rgba( 59,122,149,0.7);
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+    }
+    #login .form-group {
+        margin-bottom: 25px;
+    }
+    #login .checkbox {
+        margin-bottom: 20px;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    #login .checkbox.show:before {
+        content: '\e013';
+        color: rgba( 59,122,149,0.7);
+        font-size: 17px;
+        margin: 1px 0 0 3px;
+        position: absolute;
+        pointer-events: none;
+        font-family: 'Glyphicons Halflings';
+    }
+    #login .checkbox .character-checkbox {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    #login .checkbox .label {
+        color: #6d6d6d;
+        font-size: 13px;
+        font-weight: normal;
+    }
+    #login .btn.btn-custom {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    #login .forget {
+        font-size: 13px;
+        text-align: center;
+        display: block;
+    }
+    
+    /*    --------------------------------------------------
+        :: Inputs & Buttons
+        -------------------------------------------------- */
+    .form-control {
+        color: #212121;
+    }
+    .btn-custom {
+        color: #fff;
+        background-color: rgba( 59,122,149,1);
+    }
+    .btn-custom:hover,
+    .btn-custom:focus {
+        color: #fff;
+    }
+    
+    /*    --------------------------------------------------
+        :: Footer
+        -------------------------------------------------- */
+    #footer {
+        color: #6d6d6d;
+        font-size: 12px;
+        
+    }
+    #footer p {
+        margin-bottom: 0;
+    }
+    #footer a {
+        color: inherit;
+    }
+
+
+    .alert.alert-danger.alert-custom{
+        margin-top: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    #login-form{
+        text-align: center;
+    }
+    #login h2 {
+        color: #8E8F8E;
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+        top: -5px;
+    }
+
+    .conditions{
+        color: #8E8F8E;
+        font-size: 12px;
+        text-align: center;
+    }
+    .btn .btn-custom .btn-lg .btn-block .disabled{
+        background-color: rgba(31, 166, 123, 0.62);
+        pointer-events: none;
+    }
+
+
+    .form-wrap{
+        text-align: center !important;
+    }
+    .text-logo{
+        height: 100px;
+    }
+
+    .btn-facebook{
+        background-color: #3B5998 !important;
+    }
+
+    .btn-google{
+        background-color: #cf4332 !important;
+    }
+
+    /*Small devices (landscape phones, 576px and up)*/
+    @media (max-width: 767px) {
+        .welcome-img{
+            display: none;
+        }
+        .footer-content{
+            text-align: center;
+        }
+    }
+    
+    /*Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+        .welcome-img{
+            display: visible;
+            float: right;
+            max-width: 300px;
+        }
+        #login .form-wrap {
+            width: 55%;
+        }
+        .footer-content{
+            width: 55%;
+            text-align: center;
+        }
+    }
+    
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+        .welcome-img{
+            display: visible;
+            float: right;
+            max-width: 300px;
+        }
+        #login .form-wrap {
+            width: 55%;
+        }
+        .footer-content{
+            width: 55%;
+            text-align: center;
+        }
+    }
+    
+    /*Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+        .welcome-img{
+            display: visible;
+            float: right;
+            max-width: 300px;
+        }
+    }

@@ -1,0 +1,55 @@
+<nav class="navbar navbar-primary">
+        <img class="navbar-brand" src="../../../assets/images/text-logo-white.png" alt="Profile image">
+    <div class="link-container" *ngIf="!isNew">
+        <i class="fa fa-home fa-nav fa-2x" aria-hidden="true" (click)="clickedLink('market')"></i>
+        <i class="fa fa-pencil-square-o fa-nav fa-2x" aria-hidden="true" (click)="clickedLink('write')"></i>
+        <i class="fa fa-book fa-nav fa-2x" aria-hidden="true" (click)="clickedLink('read')"></i>
+        <i class="fa fa-cog fa-nav fa-2x" aria-hidden="true" (click)="clickedLink('settings')"></i>
+
+        <p class="username" (click)="clickedLink('profile')" *ngIf="!user.showNickname && userNameCondition1">{{user.name}} {{user.surname}}
+            <img [src]="profileImage" class="img-responsive img-circle img-profile" alt="Profile image">
+        </p>
+
+        <p class="username" (click)="clickedLink('profile')" *ngIf="!user.showNickname && userNameCondition2"> New user
+            <img [src]="profileImage" class="img-responsive img-circle img-profile" alt="Profile image">
+        </p>
+
+        <p class="username" (click)="clickedLink('profile')" *ngIf="user.showNickname && user.nickname">{{user.nickname}}
+            <img [src]="profileImage" class="img-responsive img-circle img-profile" alt="Profile image">
+        </p>
+
+        <p class="username" (click)="clickedLink('profile')" *ngIf="user.showNickname && !user.nickname">{{user.email}}
+            <img [src]="profileImage" class="img-responsive img-circle img-profile" alt="Profile image">
+        </p>
+    </div>
+
+    <div class="link-container-light" *ngIf="!isNew">
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="custom-menu-icon">
+            <i class="fa fa-bars fa-2x fa-custom-menu" aria-hidden="true"></i>
+        </button>
+        <mat-menu #menu="matMenu" class="custom-menu">
+            <button mat-menu-item type="button" (click)="clickedLink('market')">
+                <i class="fa fa-home fa-nav fa-2x" aria-hidden="true"></i>
+                <span class="menu-span">Home</span>
+            </button>
+            <button mat-menu-item type="button" (click)="clickedLink('write')">
+                <i class="fa fa-pencil-square-o fa-nav fa-2x" aria-hidden="true"></i>
+                <span class="menu-span">Write</span>
+            </button>
+            <button mat-menu-item type="button" (click)="clickedLink('read')">
+                <i class="fa fa-book fa-nav fa-2x" aria-hidden="true"></i>
+                <span class="menu-span">Read</span>
+            </button>
+            <button mat-menu-item type="button" (click)="clickedLink('settings')">
+                <i class="fa fa-cog fa-nav fa-2x" aria-hidden="true"></i>
+                <span class="menu-span">Settings</span>
+            </button>
+            <button mat-menu-item type="button" (click)="clickedLink('profile')">
+                <i class="fa fa-user fa-nav fa-2x" aria-hidden="true"></i>
+                <span class="menu-span">Profile</span>
+            </button>
+
+        </mat-menu>
+
+    </div>
+</nav>

@@ -1,0 +1,33 @@
+<div class="chapter-item-container container-fluid" (click)="showChapterPreview()" *ngIf="!isLoading">
+    <div class="row">
+        <div class="col-xs-3 col-md-2 col-lg-2 index-container">
+            <b class="chapter-index">#{{chapter.index + 1}}</b>
+        </div>
+
+        <div class="col-xs-9 col-md-9 col-lg-9">
+
+            <div class="chapter-info-container container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <b>{{chapter.title | capitalize:true }}</b>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" *ngIf="!user.showNickname && user.name && user.surname">
+                        {{user.name}} {{user.surname}}
+                    </div>
+                    <div class="col" *ngIf="!user.showNickname && (!user.name || !user.surname)">
+                        {{user.email}}
+                    </div>
+                    <div class="col" *ngIf="user.showNickname && !user.nickname">
+                        {{user.email}}
+                    </div>
+                    <div class="col" *ngIf="user.showNickname && user.nickname">
+                        {{user.nickname}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

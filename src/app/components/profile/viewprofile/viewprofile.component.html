@@ -1,0 +1,91 @@
+<mat-card class="material-card profile-card" *ngIf="user">
+    <mat-card-title *ngIf="!user">My profile</mat-card-title>
+    <mat-card-title *ngIf="user">{{user.name}} {{user.surname}} profile</mat-card-title>
+    <mat-card-content>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--Img-->
+                    <mat-spinner *ngIf="isImageLoading" class="profile-spinner"></mat-spinner>
+                    <div *ngIf="!isImageLoading" class="image-container">
+                        <img *ngIf="profileImage" [src]="profileImage" class="img-responsive img-circle img-profile" alt="Profile image">
+                    </div>
+                    <!--Img-->
+                </div>
+                <div class="col-md-6">
+                    <!--Info-->
+                    <mat-list>
+
+                        <p *ngIf="!user.name && !user.surname && !user.birthday && !user.address">
+                            Edit your profile!
+                        </p>
+
+                        <div *ngIf="user.name || user.surname || user.nickname">
+                            <mat-list-item>
+                                <mat-icon mat-list-icon>
+                                    <i class="fa-custom fa fa-user" aria-hidden="true"></i>
+                                </mat-icon>
+                                <h4 mat-line>{{user.name}} {{user.surname}} ({{user.nickname}})</h4>
+                                <p mat-line class="profile-description"> Name and surname</p>
+                            </mat-list-item>
+                        </div>
+                        <div *ngIf="user.birthday">
+                            <mat-list-item>
+                                <mat-icon mat-list-icon>
+                                    <i class="fa-custom fa fa-birthday-cake" aria-hidden="true"></i>
+                                </mat-icon>
+                                <h4 mat-line>{{user.birthday | date}}</h4>
+                                <p mat-line class="profile-description"> Birthday</p>
+                            </mat-list-item>
+                        </div>
+
+                        <div *ngIf="user.language">
+                            <mat-list-item>
+                                <mat-icon mat-list-icon>
+                                    <i class="fa-custom fa fa-globe" aria-hidden="true"></i>
+                                </mat-icon>
+                                <h4 mat-line>{{user.language}}</h4>
+                                <p mat-line class="profile-description"> Language</p>
+                            </mat-list-item>
+                        </div>
+
+                        <div *ngIf="user.address && !(!user.address.address && !user.address.city && !user.address.postalCode && !user.address.state)">
+                            <mat-list-item>
+                                <mat-icon mat-list-icon>
+                                    <i class="fa-custom fa fa-location-arrow" aria-hidden="true"></i>
+                                </mat-icon>
+                                <h4 mat-line>
+                                    <p class="address-info" *ngIf="user.address.address">{{user.address.address}},</p> 
+                                    <p class="address-info" *ngIf="user.address.city">{{user.address.city}} </p>
+                                    <p class="address-info" *ngIf="user.address.postalCode">({{user.address.postalCode}}),</p>
+                                    <p class="address-info" *ngIf="user.address.state">{{user.address.state}}</p>
+                                </h4>
+                                <p mat-line class="profile-description"> Address</p>
+                            </mat-list-item>
+                        </div>
+
+                        <div *ngIf="user.ratingSummary">
+                            <mat-list-item>
+                                <mat-icon mat-list-icon>
+                                    <i class="fa-custom fa fa-trophy" aria-hidden="true"></i>
+                                </mat-icon>
+                                <h4 mat-line>
+                                    <social-rating-item [rating]="user.ratingSummary" [viewType]="'light'"></social-rating-item>
+                                </h4>
+                                <p mat-line class="profile-description"> Rating average</p>
+                            </mat-list-item>
+                        </div>
+                    </mat-list>
+                    <!--/Info-->
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button *ngIf="isEditPossible" color="primary" type="button" (click)="goToUpdateUser()">Edit</button>
+
+    </mat-card-actions>
+</mat-card>
+<mat-card *ngIf="!user">
+    <mat-spinner class="profile-spinner"></mat-spinner>
+</mat-card>

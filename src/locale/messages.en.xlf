@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3da80eef3c99d983fda235a3c80f32da89a3d547" datatype="html">
+        <source>New shared story</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start/newstory-start.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

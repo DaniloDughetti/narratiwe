@@ -1,0 +1,37 @@
+<mat-card class="material-card newstory-card">
+    <mat-card-title>Start a new story!</mat-card-title>
+    <mat-card-content>
+        <form class="edit-story-form">
+
+            <!--Title-->
+            <mat-form-field class="edit-story-input">
+                <input matInput placeholder="Title" [(ngModel)]="title" name="title" value="title">
+            </mat-form-field>
+
+            <!--Description-->
+            <mat-form-field class="edit-story-input">
+                <input matInput placeholder="Description (A brief preview)" [(ngModel)]="description" name="description" value="description">
+            </mat-form-field>
+
+            <!--Language-->
+            <label class="story-label">Language</label>
+            <select id='language-a2-select' name="selectedLanguage" [(ngModel)]="selectedLanguage" (ngModelChange)="onLanguageChanged($event)"
+                class="story-form-control">
+                <option [value]='language' *ngFor="let language of languageList">{{ language }}</option>
+            </select>
+
+            <!--Kind-->
+            <label class="story-label">Kind</label>
+            <select id='kind-select' name="selectedKind" [(ngModel)]="selectedKind" (ngModelChange)="onKindChanged($event)" class="story-form-control">
+                <option [value]='kind.value' *ngFor="let kind of kindList">{{ kind.viewValue }}</option>
+            </select>
+            <!--Image-->
+            <upload-form (uploadResult)="imageUploadEmitter($event)" [namefile]="imageUUID"></upload-form>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button color="primary" type = "button" (click)="backClicked()">Back</button>
+        <button mat-button color="primary" type = "button" (click)="createStory()" *ngIf="!doneDisabled">Start</button>
+        <button mat-button color="primary" type = "button" (click)="createStory()" *ngIf="doneDisabled" disabled>Start</button>
+    </mat-card-actions>
+</mat-card>

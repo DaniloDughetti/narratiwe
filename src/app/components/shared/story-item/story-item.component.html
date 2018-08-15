@@ -1,0 +1,48 @@
+<div class="story-item-container container-fluid">
+  <div class="row">
+    <div class="col-xs-4 col-md-2 col-lg-2" *ngIf="!isLoading">
+      <p class="vote" *ngIf="showVote">{{vote}}</p>
+      <div *ngIf="!isImageLoading" class="image-container">
+        <img *ngIf="storyImage" [src]="storyImage" class="img-responsive img-story" alt="Profile image">
+        <img *ngIf="!storyImage" src="../../../assets/images/book.png" class="img-responsive img-story" alt="Profile image">
+      </div>
+    </div>
+    <div class="col-xs-8 col-md-10 col-lg-10" *ngIf="!isLoading">
+      <div class="story-info-container container-fluid">
+        <div class="row">
+          <div class="col">
+            <b>{{story.title | capitalize:true }}
+              <div *ngIf="isStoryPrivate" class="story-type full">
+                <i class="fa-private fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div *ngIf="!isStoryPrivate" class="story-type full">
+                <i class="fa-shared fa fa-unlock" aria-hidden="true"></i>
+              </div>
+            </b>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col" *ngIf="!user.showNickname && user.name && user.surname">
+            {{user.name}} {{user.surname}}
+          </div>
+          <div class="col" *ngIf="!user.showNickname && !user.name || !user.surname">
+            {{user.email}}
+          </div>
+          <div class="col" *ngIf="user.showNickname && user.nickname">
+            {{user.nickname}}
+          </div>
+          <div class="col" *ngIf="user.showNickname && !user.nickname">
+              {{user.email}}
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="story-description">{{story.description}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

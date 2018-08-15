@@ -1,0 +1,43 @@
+<div class="star-container" *ngIf="!isInputEnabled">
+    <i *ngIf="star1no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star1half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star1full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true"></i>
+
+    <i *ngIf="star2no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star2half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star2full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true"></i>
+
+    <i *ngIf="star3no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star3half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star3full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true"></i>
+
+    <i *ngIf="star4no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star4half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star4full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true"></i>
+
+    <i *ngIf="star5no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star5half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true"></i>
+    <i *ngIf="star5full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true"></i>
+</div>
+
+<div class="star-container" *ngIf="isInputEnabled">
+    <i *ngIf="star1no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true" (click)="starClicked(1)"></i>
+    <i *ngIf="star1half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true" (click)="starClicked(1)"></i>
+    <i *ngIf="star1full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true" (click)="starClicked(1)"></i>
+
+    <i *ngIf="star2no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true" (click)="starClicked(2)"></i>
+    <i *ngIf="star2half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true" (click)="starClicked(2)"></i>
+    <i *ngIf="star2full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true" (click)="starClicked(2)"></i>
+
+    <i *ngIf="star3no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true" (click)="starClicked(3)"></i>
+    <i *ngIf="star3half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true" (click)="starClicked(3)"></i>
+    <i *ngIf="star3full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true" (click)="starClicked(3)"></i>
+
+    <i *ngIf="star4no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true" (click)="starClicked(4)"></i>
+    <i *ngIf="star4half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true" (click)="starClicked(4)"></i>
+    <i *ngIf="star4full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true" (click)="starClicked(4)"></i>
+
+    <i *ngIf="star5no" class="fa-star-no-input fa fa-star-o fa-onehalf" aria-hidden="true" (click)="starClicked(5)"></i>
+    <i *ngIf="star5half" class="fa-star-no-input fa fa-star-half-o fa-onehalf" aria-hidden="true" (click)="starClicked(5)"></i>
+    <i *ngIf="star5full" class="fa-star-no-input fa fa-star fa-onehalf" aria-hidden="true" (click)="starClicked(5)"></i>
+</div>

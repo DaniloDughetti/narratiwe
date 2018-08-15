@@ -1,0 +1,71 @@
+.comment-content{
+    width: 100%;
+}
+
+.comment-user{
+    color: #808080;
+}
+
+.comment-date{
+    color: #808080;
+    font-size: 14px;
+}
+
+.comment-item-container{
+    padding-top: 10px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.comment-item-container:hover{
+    background-color: #F5F5F5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.comment-form{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.comment-button{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.img-profile{
+    object-fit: cover;
+    display: inline-block;
+}
+
+    /*Small devices (landscape phones, 576px and up)*/
+    @media (max-width: 767px) {
+        img.img-responsive.img-circle.img-profile{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+    /*Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+        img.img-responsive.img-circle.img-profile{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+        img.img-responsive.img-circle.img-profile{
+            width: 35px;
+            height: 35px;
+        }
+    }
+    /*Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+        img.img-responsive.img-circle.img-profile{
+            width: 35px;
+            height: 35px;
+        }
+    }

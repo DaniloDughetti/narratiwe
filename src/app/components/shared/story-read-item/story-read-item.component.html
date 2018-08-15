@@ -1,0 +1,46 @@
+<div class="story-item-container container-fluid" *ngIf="!isLoading">
+  <div class="row">
+    <div class="col-xs-4 col-md-2 col-lg-2">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <b>{{chapter.title | capitalize:true }}
+            </b>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-profile" *ngIf="!user.showNickname && user.name && user.surname">
+            {{user.name}} {{user.surname}}
+          </div>
+          <div class="col col-profile" *ngIf="!user.showNickname && !user.name || !user.surname">
+            {{user.email}}
+          </div>
+          <div class="col col-profile" *ngIf="user.showNickname && user.nickname">
+            {{user.nickname}}
+          </div>
+          <div class="col col-profile" *ngIf="user.showNickname && !user.nickname">
+            {{user.email}}
+          </div>
+        </div>
+        <div class="row">
+          <img *ngIf="userImage" [src]="userImage" class="img-responsive img-circle img-story" alt="User image">
+          <img *ngIf="!userImage" src="../../../assets/images/profile.png" class="img-responsive img-circle img-story" alt="Profile image">
+        </div>
+      </div>
+  <hr>      
+    </div>
+    <div class="col-xs-8 col-md-10 col-lg-10" *ngIf="!isLoading">
+      <div class="story-info-container container-fluid">
+
+
+        <div class="row">
+          <div class="col-sm-8 col-md-10 col-lg-10">
+            <div class="chapter-content">
+              <markdown-to-html [data]="chapter.content"></markdown-to-html>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

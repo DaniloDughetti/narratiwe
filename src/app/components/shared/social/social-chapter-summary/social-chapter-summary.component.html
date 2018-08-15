@@ -1,0 +1,11 @@
+<mat-card class="material-card" *ngIf="!isLoading">
+  <mat-card-content>
+    <div class="container rating-container" *ngIf="isDataExisting">
+      <div class="row">
+        <div class="col">
+            <social-rating-edit [chapter] = "chapter" [story] = "story" [rating]="ratingUser" [isAlreadyRated]= "isAlreadyRated"></social-rating-edit>
+          </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

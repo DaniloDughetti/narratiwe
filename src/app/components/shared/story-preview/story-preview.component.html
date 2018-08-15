@@ -1,0 +1,181 @@
+<div class="my-container">
+    <ngx-loading [show]="isLoading">
+    </ngx-loading>
+</div>
+<div class="container" *ngIf="!isLoading">
+    <div class="row">
+        <div class="col col-lg-2">
+        </div>
+        <div class="col-md-auto">
+            <mat-card class="material-card newstory-card">
+                <mat-card-title>
+                    <b>{{story.title | capitalize:true }}</b>
+                </mat-card-title>
+                <mat-card-content>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!--Img-->
+                                <img *ngIf="storyImage" [src]="storyImage" class="img-responsive img-story" alt="Story image">
+                                <img *ngIf="!storyImage" src="../../assets/images/book.png" class="img-responsive img-story" alt="Story image">
+                                <!--Img-->
+                            </div>
+                            <div class="col-md-6">
+                                <!--Info-->
+                                <mat-list>
+
+                                    <!--Type-->
+                                    <mat-list-item *ngIf="storyType">
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-lock" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line>This story is private</h4>
+                                        <p mat-line class="story-description">Type</p>
+                                    </mat-list-item>
+
+                                    <mat-list-item *ngIf="!storyType">
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-unlock" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line class>This story is shared</h4>
+                                        <p mat-line class="story-description">Type</p>
+                                    </mat-list-item>
+
+                                    <mat-list-item *ngIf="storyVisibility">
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-share-alt" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line class>This story is in the market since {{story.datePublished | date}}</h4>
+                                        <p mat-line class="story-description">Everyone can read your story</p>
+                                    </mat-list-item>
+
+                                    <mat-list-item *ngIf="!storyVisibility">
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-share-alt" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line class>This story is not visible in the market</h4>
+                                        <p mat-line class="story-description">Only you can read your story</p>
+                                    </mat-list-item>
+
+                                    <!--Author-->
+                                    <mat-list-item class="user-link" (click)="viewUser()">
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-user" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line *ngIf="!user.showNickname && user.name && user.surname">{{user.name}} {{user.surname}}</h4>
+                                        <h4 mat-line *ngIf="!user.showNickname && (!user.name || !user.surname)">{{user.email}}</h4>
+                                        <h4 mat-line *ngIf="user.showNickname && user.nickname">{{user.nickname}}</h4>
+                                        <h4 mat-line *ngIf="user.showNickname && !user.nickname">{{user.email}}</h4>
+                                        <p mat-line class="story-description">Author </p>
+                                    </mat-list-item>
+
+                                    <!--Description-->
+                                    <mat-list-item>
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-info" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line *ngIf="story.description">{{story.description}}</h4>
+                                        <h4 mat-line *ngIf="!story.description">No description</h4>
+                                        <p mat-line class="story-description">Description</p>
+                                    </mat-list-item>
+
+                                    <!--Language-->
+                                    <mat-list-item>
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-globe" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line *ngIf="story.language">{{story.language}}</h4>
+                                        <h4 mat-line *ngIf="!story.language">Language unknown</h4>
+                                        <p mat-line class="story-description">Language</p>
+                                    </mat-list-item>
+
+                                    <!--Kind-->
+                                    <mat-list-item>
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-file-text" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line *ngIf="story.kind">{{kind}}</h4>
+                                        <h4 mat-line *ngIf="!story.kind">Language unknown</h4>
+                                        <p mat-line class="story-description">Kind</p>
+                                    </mat-list-item>
+
+                                    <!--Date Creation-->
+                                    <mat-list-item>
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-plus" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line *ngIf="story.dateCreation">{{story.dateCreation | date}}</h4>
+                                        <h4 mat-line *ngIf="!story.dateCreation">Creation date unknown</h4>
+                                        <p mat-line class="story-description">Creation date</p>
+                                    </mat-list-item>
+
+                                    <!--Date Editing-->
+                                    <mat-list-item>
+                                        <mat-icon mat-list-icon>
+                                            <i class="fa-custom fa fa-pencil" aria-hidden="true"></i>
+                                        </mat-icon>
+                                        <h4 mat-line *ngIf="story.dateEditing">{{story.dateEditing | date}}</h4>
+                                        <h4 mat-line *ngIf="!story.dateEditing">Last edit unknown</h4>
+                                        <p mat-line class="story-description">Last edit</p>
+                                    </mat-list-item>
+
+
+                                </mat-list>
+                                <!--/Info-->
+                            </div>
+                        </div>
+                        <!--Chapter list-->
+
+                    </div>
+
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button color="primary" type="button" (click)="backClicked()">Back</button>
+                    <button mat-button color="primary" type="button" (click)="editClicked()" *ngIf="isEditPossible">Edit</button>
+                    <div class="action-button-div" *ngIf="isPublishPossible">
+                        <button mat-button color="primary" type="button" (click)="openPublishDialog()" *ngIf="!storyVisibility">Publish</button>
+                        <button mat-button color="primary" type="button" (click)="openPublishDialog()" *ngIf="storyVisibility">Remove from market</button>
+                    </div>
+                    <button mat-button color="primary" type="button" (click)="addToFavorites()" *ngIf="!isFavorite">Add to favorites</button>
+                    <button mat-button color="primary" type="button" (click)="removeFromFavorites()" *ngIf="isFavorite">Remove from favorites</button>
+
+                    <button mat-button color="primary" type="button" (click)="shareOnFacebook()">Share on Facebook</button>
+                    
+                </mat-card-actions>
+            </mat-card>
+
+            <mat-card class="material-card newstory-chapter-card">
+                <mat-card-title>
+                    <b>Chapters</b>
+                </mat-card-title>
+                <mat-card-content>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <chapter-list [story]="story" (chaptersLength)="setStoryReadable($event)"></chapter-list>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button color="primary" type="button" (click)="readClicked()" *ngIf="isReadPossible">Continue to read</button>
+                </mat-card-actions>
+            </mat-card>
+
+            <div class="read-banner">
+                <read-banner [story]="storyId" [isShared]="!storyType"></read-banner>
+            </div>
+
+            <div class="social-summary">
+                <social-story-summary [story]="story"></social-story-summary>
+            </div>
+            <div class="social">
+                <social-story [story]="story"></social-story>
+            </div>
+        </div>
+        <div class="col col-lg-2">
+
+        </div>
+    </div>
+</div>

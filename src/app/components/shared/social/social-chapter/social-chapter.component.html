@@ -1,0 +1,18 @@
+<mat-expansion-panel class="material-expansion">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <b>Social</b>
+    </mat-panel-title>
+    <mat-panel-description>
+      {{commentsNumber}} comments
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <div class="comment-section" *ngIf="!isLoadingComment">
+    <ul class="comment-list">
+      <li *ngFor="let comment of comments">
+        <social-chapter-comment-item [chapterComment]="comment"></social-chapter-comment-item>
+      </li>
+    </ul>
+    <social-chapter-comment-new [chapter]="chapter"></social-chapter-comment-new>
+  </div>
+</mat-expansion-panel>

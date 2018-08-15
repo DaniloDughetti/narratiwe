@@ -1,0 +1,29 @@
+<mat-card class="material-card settings-card">
+    <mat-card-title>Settings</mat-card-title>
+    <mat-list>
+        <mat-list-item class="settings-item">
+            <button mat-button class="settings-button" type="button" (click)="changeNicknameSetting()">Show only nickname
+                <mat-slide-toggle class="setting-toggle" [checked]="showNickname">
+                </mat-slide-toggle>
+            </button>
+        </mat-list-item>
+        <mat-list-item class="settings-item">
+            <button mat-button class="settings-button" type="button" (click)="changeLanguage()">Change main language</button>
+        </mat-list-item>
+        <!--  <mat-list-item class="settings-item">
+            <button mat-button class="settings-button" type="button" (click)="openConditionsDialog()">Privacy and conditions</button>
+        </mat-list-item>-->
+        <mat-list-item class="settings-item">
+            <button mat-button class="settings-button" type="button" (click)="openAboutDialog()">About website</button>
+        </mat-list-item>
+        <mat-list-item class="settings-item">
+            <button mat-button class="settings-button" type="button" (click)="openAuthorDialog()">About author</button>
+        </mat-list-item>
+        <mat-list-item class="settings-item">
+            <button mat-button class="settings-button" type="button" (click)="openSupportDialog()">Support</button>
+        </mat-list-item>
+        <mat-list-item class="settings-item">
+            <button mat-button class="settings-button" type="button" (click)="logOut()">Log out</button>
+        </mat-list-item>
+    </mat-list>
+</mat-card>

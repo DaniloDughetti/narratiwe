@@ -1,0 +1,11 @@
+<div class="my-container">
+    <ngx-loading [show]="isLoading">
+    </ngx-loading>
+</div>
+
+<navbar [isNew] = "true" *ngIf="!isLoading"></navbar>
+<div class = "error-container" *ngIf="!isLoading">
+  <h1>Oh, this is embarrassing</h1>
+  <p>The error has been send to the server, thank you for the patience</p>
+  <button mat-button color="primary" type="button" (click)="goToApp()">Return to app</button>  
+</div>

@@ -1,0 +1,28 @@
+<mat-card class="material-card newstory-card">
+    <mat-card-content>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-card class="newstory-button-card" id="new-shared-story" (click)="startSharedStory()">
+                        <mat-card-title>
+                            <b>New shared story</b>
+                        </mat-card-title>
+                        <mat-card-content class="newstory-button-content" id="new-shared-story-label">
+                            Every chapter can be read and written by everyone!
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="col-md-6">
+                    <mat-card class="newstory-button-card" (click)="startPrivateStory()">
+                        <mat-card-title>
+                            <b>New private story</b>
+                        </mat-card-title>
+                        <mat-card-content class="newstory-button-content">
+                            Edit your story, then relese it on the market!
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

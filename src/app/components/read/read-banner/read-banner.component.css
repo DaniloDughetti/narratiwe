@@ -1,0 +1,52 @@
+.social{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.banner-card{
+    background-color: rgba(137, 189, 211, 1) !important;
+    cursor: pointer;
+}
+.white-button{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.col-read{
+    text-align: center;
+}
+.center-button{
+    position: relative;
+    left: -20px;
+}
+
+    /*Small devices (landscape phones, 576px and up)*/
+    @media (max-width: 767px) {
+        .rating-container{
+            position: relative;
+            top: 18px;
+        }
+    }
+    
+    /*Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+        .rating-container{
+            position: relative;
+            top: 18px;
+        }
+    }
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+        .rating-container{
+            position: relative;
+            top: 18px;
+        }
+    }
+    /*Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+        .rating-container{
+            position: relative;
+            top: 18px;
+        }
+    }
+

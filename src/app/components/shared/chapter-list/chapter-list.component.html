@@ -1,0 +1,38 @@
+<div class="container-fluid" *ngIf="!isListLoading">
+    <div class="row">
+        <div class="col">
+            <ul class="chapter-list">
+                <li *ngFor="let chapter of chapters | chapterIndex">
+                    <chapter-item [chapter]="chapter" [story]="story"></chapter-item>
+                </li>
+                <li>
+                    <div class="chapter-item-container container-fluid chapter-plus-container" (click)="newChapter()" *ngIf="isEditPossible">
+                        <div class="row">
+                            <div class="col-xs-3 col-md-2 col-lg-2 plus-container">
+                                <i class="fa-custom-add fa fa-plus fa-2x" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="col-xs-9 col-md-9 col-lg-9">
+
+                                <div class="chapter-info-container container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <b class="label-new-chapter">Add new chapter</b>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            Continue the story
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

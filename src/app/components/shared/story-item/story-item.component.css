@@ -1,0 +1,113 @@
+.img-story{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.image-container{
+    width: auto;
+    display: inline-block;
+}
+.vote{
+    display: inline-block;
+}
+.story-item-container{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+.story-item-container:hover{
+    background-color: #F5F5F5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.story-description{
+    font-style: italic;
+    color: #939393;
+    padding-right: 60px;
+}
+
+.story-type{
+    display: inline;
+}
+
+.fa-private{
+    float: right;
+    color: #939393;
+    position: relative;
+    right: -15px;
+}
+
+.fa-shared{
+    float: right;
+    color: #07bb2e;
+    position: relative;
+    right: -15px;
+}
+
+.story-info-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+    /*Small devices (landscape phones, 576px and up)*/
+    @media (max-width: 767px) {
+        .fa-private{
+            padding-right: 0px;
+        }
+        
+        .fa-shared{
+            padding-right: 0px;
+        }
+    }
+    
+    /*Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+        .fa-private{
+            padding-right: 0px;
+        }
+        
+        .fa-shared{
+            padding-right: 0px;
+        }
+        
+        div.story-type.full{
+            position: relative !important;
+            right: 35px !important;
+        }
+    }
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 892px) {
+        .fa-private{
+            padding-right: 40px;
+        }
+        
+        .fa-shared{
+            padding-right: 40px;
+        }
+        div.story-type.full{
+            position: relative !important;
+            right: 0px !important;
+        }
+    }
+    /*Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+        .fa-private{
+            padding-right: 40px;
+        }
+        
+        .fa-shared{
+            padding-right: 40px;
+        }
+    }

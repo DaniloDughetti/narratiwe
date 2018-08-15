@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="it" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="505af35a3a7b7c961fed297875d710debcdf31cf" datatype="html">
+        <source>Where milions storyes are ready to be written</source>
+        <target>Dove milioni di storie aspettano di essere lette e scritte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <target>Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43f9b84b4bd40c1470067b175958b11a7a8c869d" datatype="html">
+        <source>If you subscrive to our service you&apos;ll agree to our conditions and privacy</source>
+        <target>Se ti iscrivi al nostro servizio accetterai le condizioni e la privacy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e1e9fddd61f6c9a04b0baf27c3621208f2b487a" datatype="html">
+        <source>Already Registered?</source>
+        <target>Gia registrato?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dcd47f4d6b26b045a1b041b2fc73123bc0cfc118" datatype="html">
+        <source>Log In</source>
+        <target>Accedi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ff4e149d8ff461104558696c56729ce99998c63" datatype="html">
+        <source>Don&apos;t you have an account?</source>
+        <target>Non hai un account?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3ac9a098a34b04923bf20ec0c754bab138750b79" datatype="html">
+        <source>My profile</source>
+        <target>Il mio profilo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="49ee4086d4b50638b3d1fd0647abd2cfde4f1613" datatype="html">
+        <source><x id="INTERPOLATION"/> <x id="INTERPOLATION_1"/> profile</source>
+        <target>Profilo di <x id="INTERPOLATION"/> <x id="INTERPOLATION_1"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f61b6e73d5508bd199bba1b09ba2b06425e1bc2c" datatype="html">
+        <source>
+                            Edit your profile!
+                        </source>
+        <target>Modifica il tuo profilo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="292feeb1f36f46350f735ed62daad9ea6d7686d7" datatype="html">
+        <source> Name and surname</source>
+        <target>Nome e cognome</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="229eb4822926519c465070d4fd909d9f25fbab0b" datatype="html">
+        <source> Birthday</source>
+        <target>Data di nascita</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="66f72ce8ce0ef8ff762be14791dede68fb05fe30" datatype="html">
+        <source> Language</source>
+        <target>Lingua</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9aa9dd46b13ae1eedccaa06a4c17a7ae18ab080f" datatype="html">
+        <source> Address</source>
+        <target>Indirizzo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="14bb3ab0c2ddd5f3c6df7c851f21ddd01ed721f0" datatype="html">
+        <source> Rating average</source>
+        <target>Media voti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
+        <source>Edit</source>
+        <target>Modifica</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/viewprofile/viewprofile.component.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-preview/chapter-preview.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-story-comment-item/social-story-comment-item.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-chapter-comment-item/social-chapter-comment-item.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eb4a92b73acc03144cfebaa762ea36496fcea0fa" datatype="html">
+        <source>
+      Upload image
+  </source>
+        <target>Carica immagine</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/uploads/upload-form/upload-form.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="859e5acecbd67ad14b81174f8b7a556411c840dd" datatype="html">
+        <source>Edit profile</source>
+        <target>Modifica profilo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/editprofile/editprofile.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a43f25a9ac40e8e2441ff0be7a36b8e5d15534df" datatype="html">
+        <source>Country</source>
+        <target>Paese</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/editprofile/editprofile.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fe46ccaae902ce974e2441abe752399288298619" datatype="html">
+        <source>Language</source>
+        <target>Lingua</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/editprofile/editprofile.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start-edit/newstory-start-edit.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-edit-preview/story-edit-preview.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/search/search.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cda31dbd724cf5f4fa7a4274d9120651490c8a8c" datatype="html">
+        <source>Back</source>
+        <target>Indietro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/editprofile/editprofile.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start-edit/newstory-start-edit.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-edit-preview/story-edit-preview.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-edit/chapter-edit.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-preview/chapter-preview.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/search-result/search-result.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8dd413cee2228118c536f503709329a4d1a395e2" datatype="html">
+        <source>Done</source>
+        <target>Fatto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/editprofile/editprofile.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-edit-preview/story-edit-preview.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-edit/chapter-edit.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-story-comment-item/social-story-comment-item.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-chapter-comment-item/social-chapter-comment-item.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3da80eef3c99d983fda235a3c80f32da89a3d547" datatype="html">
+        <source>New shared story</source>
+        <target>Nuova storia condivisa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start/newstory-start.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="065df656338fee8caedb6d06a264d50d68240171" datatype="html">
+        <source>
+                            Every chapter can be read and written by everyone!
+                        </source>
+        <target>Ogni capitolo puo essere letto e continuato da chiunque!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start/newstory-start.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="26a50ab02c10debade54642fae1a47aec9e35d52" datatype="html">
+        <source>New private story</source>
+        <target>Nuova storia privata</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start/newstory-start.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e14fb05dcbe58996b434cf889428e1c4c35001a" datatype="html">
+        <source>
+                            Edit your story, then relese it on the market!
+                        </source>
+        <target>Modifica la tua storia e una volta finita rilasciala sul market!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start/newstory-start.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d5def39caec9ac0a03dce52204892116fe9bddb1" datatype="html">
+        <source>Start a new story!</source>
+        <target>Comincia una nuova storia!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start-edit/newstory-start-edit.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1142d1e241e766713838ec7055c1b912ef9a0d7f" datatype="html">
+        <source>Kind</source>
+        <target>Genere</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start-edit/newstory-start-edit.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-edit-preview/story-edit-preview.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/search/search.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8434d4a28744d7df82cd39ef8da4266fcbc40064" datatype="html">
+        <source>Start</source>
+        <target>Inizia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/write/newstory/newstory-start-edit/newstory-start-edit.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7c8106aebcfac4d4279f67a0f9c9193879a051a5" datatype="html">
+        <source>Are you sure to remove from market <x id="INTERPOLATION"/>?</source>
+        <target>Sei sicuro di voler rimuovere <x id="INTERPOLATION"/> dal market?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/publish-dialog/publish-dialog.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e56dad04650d4e0cb77a85a1c78d897d2b8ff80c" datatype="html">
+        <source>Are you sure to publish <x id="INTERPOLATION"/>?</source>
+        <target>Sei sicuro di voler pubblicare <x id="INTERPOLATION"/> sul market?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/publish-dialog/publish-dialog.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6756a287ef61b42b5a09ae1bdf0878a974fdd776" datatype="html">
+        <source>Removing from market this private story you will disble every user on Creatiwe to read, comment a rate your story.</source>
+        <target>Rimuovendo questa storia privata dal market non permetterai a nessun utente di leggere, commentare o valutare la tu storia.</target>        
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/publish-dialog/publish-dialog.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea1af4a6ae59c290c8fbef3409a23ac24b67f6b7" datatype="html">
+        <source>Publishing this private story you will enable every user on Creatiwe to read, comment a rate your story.</source>
+        <target>Pubblicando questa storia privata sul market permetterai ad ogni utente di leggere, commentare o votare la tua storia.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/publish-dialog/publish-dialog.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="68e710782ccb5398b3acb8844caf0b199da2c3da" datatype="html">
+        <source>Confirm</source>
+        <target>Confirm</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/publish-dialog/publish-dialog.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/delete-dialog/delete-dialog.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7b35c384aecd25a516200d6921836374613dfe7" datatype="html">
+        <source>Cancel</source>
+        <target>Annulla</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/publish-dialog/publish-dialog.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/delete-dialog/delete-dialog.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/conditions-dialog/conditions-dialog.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/change-language-dialog/change-language-dialog.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43d7262ae661482a16807f4e67d3aeb955df3d52" datatype="html">
+        <source>This story is private</source>
+        <target>Questa storia è privata</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f61c6867295f3b53d23557021f2f4e0aa1d0b8fc" datatype="html">
+        <source>Type</source>
+        <target>Tipo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f2af6530842b2df6b28366ce0e6f6df7aa69e09f" datatype="html">
+        <source>This story is shared</source>
+        <target>Questa storia è condivisa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df6f14b8b89ba4f74abc71b29da3cd20670b9ccb" datatype="html">
+        <source>This story is in the market since <x id="INTERPOLATION"/></source>
+        <target>Questa storia è sul market dal <x id="INTERPOLATION"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0ab98cb9a4b3b6453dfeeb41fe2e7837f985db51" datatype="html">
+        <source>Everyone can read your story</source>
+        <target>Tutti possono leggere la tua storia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="767b8be83faafd6e54603f61dff8e2c5fc162713" datatype="html">
+        <source>This story is not visible in the market</source>
+        <target>Questa storia non e visibile sul market</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2611d2f92648f980c1494dc65830ab154506ee0c" datatype="html">
+        <source>Only you can read your story</source>
+        <target>Puoi leggere questa storia solo te</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="798e0cc66b9df4e7fe866f73d64b40b27751229f" datatype="html">
+        <source>Author </source>
+        <target>Autore</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-preview/chapter-preview.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="37b56526e384f843a15323dc730b484a97b4c968" datatype="html">
+        <source>No description</source>
+        <target>Nessuna descrizione</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
+        <source>Description</source>
+        <target>Descrizione</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7153eefae6478669490363d08a82266e91921c4c" datatype="html">
+        <source>Language unknown</source>
+        <target>Lingua non definita</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0d0928d2daa5acfd3ba7888de8f379d39bf91915" datatype="html">
+        <source>Creation date unknown</source>
+        <target>Data di creazione sconosciuta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b8bf76233b7374b890d4e7867426a6f681d134e6" datatype="html">
+        <source>Creation date</source>
+        <target>Data di creazione</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0244a1886eb9eeeb8abc30a56b0b344c636794c7" datatype="html">
+        <source>Last edit unknown</source>
+        <target>Data ultima modifica sconosciuta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-preview/chapter-preview.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30551adcb67b7efc1d9d06adce551f9e9efaad7b" datatype="html">
+        <source>Last edit</source>
+        <target>Data ultima modifica</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-preview/chapter-preview.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="223aae0477f79f0bc4436c1c57619415f04cbbb3" datatype="html">
+        <source>Publish</source>
+        <target>Pubblica</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-story-comment-new/social-story-comment-new.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-chapter-comment-new/social-chapter-comment-new.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f918e9d4a412e171573cd542221cbd2b4db0ce31" datatype="html">
+        <source>Remove from market</source>
+        <target>Rimuovi dal market</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c4370de25a763f9797c5d94cb78e63a6dfd5f334" datatype="html">
+        <source>Add to favorites</source>
+        <target>Aggiungi ai preferiti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9699d88304b3f87e55251a0ea22190c8a6e1062b" datatype="html">
+        <source>Remove from favorites</source>
+        <target>Rimuovi dai preferiti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52b70e58bf84d542d4add016822c556deda9a776" datatype="html">
+        <source>Continue to read</source>
+        <target>Continua a leggere</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-preview/story-preview.component.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ebf9ba9536ccb9ed20043bca3e2a7e0bc2edf8a9" datatype="html">
+        <source>Are you sure to delete <x id="INTERPOLATION"/>?</source>
+        <target>Sei sicuro di voler cancellare <x id="INTERPOLATION"/>?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/delete-dialog/delete-dialog.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aeb60bbd084a23641f9aa93ae4a25a3b676f792b" datatype="html">
+        <source>Deleting the story you will lose all the chapters and the social elements on it.</source>
+        <target>Cancellando la storia perderai tutti i capitoli e i contenuti social connessi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/delete-dialog/delete-dialog.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9ee3eab3ef683c12da0e6ce4b2d60d558a491047" datatype="html">
+        <source>Edit story!</source>
+        <target>Modifica la storia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-edit-preview/story-edit-preview.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="826b25211922a1b46436589233cb6f1a163d89b7" datatype="html">
+        <source>Delete</source>
+        <target>Elimina</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/story-edit-preview/story-edit-preview.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-story-comment-item/social-story-comment-item.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-chapter-comment-item/social-chapter-comment-item.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="25e5e66315284b5304004484f1c0b3cd7b77d916" datatype="html">
+        <source>Edit chapter</source>
+        <target>Modifica il capitolo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-edit/chapter-edit.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b1d5e95f6bdcfb4b737413f5fa157e0dcb103d5" datatype="html">
+        <source>Read</source>
+        <target>Leggi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-preview/chapter-preview.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f9c8cf2b36c38df2743e25cafae1cdfa272511c8" datatype="html">
+        <source>Go to previous chapter</source>
+        <target>Capitolo precedente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-read/chapter-read.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f49707510b23e10d0875266525480a38e21ca51b" datatype="html">
+        <source>Return to chapter summary</source>
+        <target>Ritorna al riepilogo del capitolo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-read/chapter-read.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8985b29a9febf2a80bd275b29e1a7c7d93da0cad" datatype="html">
+        <source>Return to story summary</source>
+        <target>Ritorna al riepilogo della storia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-read/chapter-read.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="26153ec9afbd102b98517513b74a72d277d95d84" datatype="html">
+        <source>Go to next chapter</source>
+        <target>Prossimo capitolo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-read/chapter-read.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f9e6a9f5d5399355dc46f6c06b12ad06aa54a6d1" datatype="html">
+        <source>
+    Story result
+  </source>
+        <target>Risultati</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/search-result/search-result.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="085e9e8788078a9455c8838ffc13acbb6395e172" datatype="html">
+        <source>
+              No results.
+            </source>
+        <target>Nessun risultato.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/search-result/search-result.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="70e50d5302805dcf4c6320bc297a87a879e3b91a" datatype="html">
+        <source>Oh, this is embarassing</source>
+        <target>Oh, questo e imbarazzante</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2d15114f5649c61c3f030a1dba126b03f8c8148f" datatype="html">
+        <source>The error has been send to the server, thank for the patience</source>
+        <target>L'errore e stato registrato, grazie per la pazienza</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="550e8912192a3665e335553cd8205121baa44f9d" datatype="html">
+        <source>Return to app</source>
+        <target>Ritorna all'app</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b6880fe0fdb5f150b7e85b35b4aac142854fd863" datatype="html">
+        <source> New user
+            <x id="TAG_IMG" ctype="image"/>
+        </source>
+        <target> Nuovo utente
+            <x id="TAG_IMG" ctype="image"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="92eee6be6de0b11c924e3ab27db30257159c0a7c" datatype="html">
+        <source>Home</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cb577a59eb9d1cd2ca4e726413b7cb354de78ea4" datatype="html">
+        <source>Write</source>
+        <target>Scrivi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="121cc5391cd2a5115bc2b3160379ee5b36cd7716" datatype="html">
+        <source>Settings</source>
+        <target>Impostazioni</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="994363f08f9fbfa3b3994ff7b35c6904fdff18d8" datatype="html">
+        <source>Profile</source>
+        <target>Profilo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="986668e81481d0fd0934b4ef56b4236ccb298712" datatype="html">
+        <source>Conditions</source>
+        <target>Condizioni</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/conditions-dialog/conditions-dialog.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dee8c41edf822a0124c80cc1e44643f947b3bc5c" datatype="html">
+        <source>Install</source>
+        <target>Installa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/conditions-dialog/conditions-dialog.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="34e7c3c63e36eccc42c94cfdbae747ab1a51f374" datatype="html">
+        <source>Who I am</source>
+        <target>Chi sono</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/about-dialog/about-dialog.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3778eeccbd43d1c4a56524025c3eea005f02ca38" datatype="html">
+        <source>I am a computer scientist, web enthusiast check my profile on danilo.dughetti.com</source>
+        <target>CIao, sono un dottor informatico, appassionato di web e coding guarda il mio portfolio danilo.dughetti@gmail.com</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/about-dialog/about-dialog.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="73930c2a2a893de488661188cdee7e22ebe020be" datatype="html">
+        <source>Got it</source>
+        <target>Capito</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/about-dialog/about-dialog.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="60a3620e64219321c8b50da502a404e9cef901ef" datatype="html">
+        <source>Change language</source>
+        <target>Cambia linuga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/change-language-dialog/change-language-dialog.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/change-language-dialog/change-language-dialog.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dad9bd0a6ed39abf2630ce27e7fdff26ecee9183" datatype="html">
+        <source>Your default Story language is <x id="INTERPOLATION"/></source>
+        <target>La tua lingua predefinita per le storie è <x id="INTERPOLATION"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/change-language-dialog/change-language-dialog.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7d015907872a96d15175d49792b583baa00ebfbe" datatype="html">
+        <source>That will change the story shown in results and the suggestions for you.</source>
+        <target>Questo cambiera i risultati e i suggerimenti per le tue storie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/change-language-dialog/change-language-dialog.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="024cdb2814b0cb3f4ced148f1a0b9854447cb214" datatype="html">
+        <source>Change</source>
+        <target>Cambia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialogs/change-language-dialog/change-language-dialog.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b1aba07ce42c129ecd86e5ed81c1513b42b5806c" datatype="html">
+        <source>Show only nickname
+            <x id="START_TAG_MAT-SLIDE-TOGGLE" ctype="x-mat-slide-toggle"/>
+            <x id="CLOSE_TAG_MAT-SLIDE-TOGGLE" ctype="x-mat-slide-toggle"/></source>
+        <target>Mostra solo il tuo nickname
+            <x id="START_TAG_MAT-SLIDE-TOGGLE" ctype="x-mat-slide-toggle"/>
+            <x id="CLOSE_TAG_MAT-SLIDE-TOGGLE" ctype="x-mat-slide-toggle"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/settings/settings-list/settings-list.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c19f9be80ba153db2778528a154f41ea506792ba" datatype="html">
+        <source>Change main language</source>
+        <target>Cambia la lingua principale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/settings/settings-list/settings-list.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a969d2f6fc04e91ce4eea308c12f6842a077dc57" datatype="html">
+        <source>Privacy and conditions</source>
+        <target>Privacy e condizioni</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/settings/settings-list/settings-list.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5eb3fab88088fdaeece242dbcbda40fadb00c3ec" datatype="html">
+        <source>About website</source>
+        <target>Informazioni</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/settings/settings-list/settings-list.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3fdc751b264ca9998e1542fcf5794e274cd56344" datatype="html">
+        <source>Log out</source>
+        <target>Esci</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/settings/settings-list/settings-list.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2eba6fa7fc6184cceba2c4cae48a57c51a612a56" datatype="html">
+        <source>Add new chapter</source>
+        <target>Aggiungi un capitolo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-list/chapter-list.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0bba4a49558e81e8d927103630597a4229a189f" datatype="html">
+        <source>
+                                            Continue the story
+                                        </source>
+        <target>Continua la storia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/chapter-list/chapter-list.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="03073bae0a16bebe3c6a3685e6270142f48ba179" datatype="html">
+        <source>
+                                You have not favorite stories    
+                            </source>
+        <target>Non hai storie favorite</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/read/favorite-stories-list/favorite-stories-list.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="55641da98fb056192a1cca7905ba9c9f49b9418a" datatype="html">
+        <source>
+                                Come read one!
+                            </source>
+        <target>Inizia a leggere!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/read/continue-read/continue-read.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="157d2cb523cbc2f5141554c2a08a4b1d628166fa" datatype="html">
+        <source>
+                                You have not read anything yet
+                            </source>
+        <target>Non hai ancora letto nulla!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/read/read-chronology/read-chronology.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="231b090759e427b7b42cb43a4e0660e247bfd9be" datatype="html">
+        <source>
+      <x id="INTERPOLATION"/> comments
+    </source>
+        <target>
+      <x id="INTERPOLATION"/> commenti
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-story/social-story.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-chapter/social-chapter.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9c433dbfa2ebc739b6634cc1ff84c7348e942851" datatype="html">
+        <source>Grammar:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </source>
+        <target>Grammatica:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-item/social-rating-item.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7ba9b3de668bd58fb2133b00920add9fbf470e30" datatype="html">
+        <source>Inspiration:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </source>
+        <target>Ispirazione:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-item/social-rating-item.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2589d1f058a5b425133a77b34f146464c3d60d75" datatype="html">
+        <source>Lexicon:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </source>
+        <target>Lessico:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-item/social-rating-item.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="076bde5604d192033ba31d0451fe2dd95243a563" datatype="html">
+        <source>Consistency:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </source>
+        <target>Coerenza:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-item/social-rating-item.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e1ec5886a7f056f66aa8471051d2e96cd090936a" datatype="html">
+        <source>Total:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </source>
+        <target>Totale:
+            <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-item/social-rating-item.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2537211be53397a02fe82c6e3c86436badbab925" datatype="html">
+        <source>
+    There&apos;s no chapter rating yet
+</source>
+<target>
+    Non ci sono ancora voti.
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-item/social-rating-item.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c4de9ffc2eebce83f711b076ad56cdb283a5ed54" datatype="html">
+        <source>Grammar:
+        <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+      </source>
+        <target>Grammatica:
+        <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-edit/social-rating-edit.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="13df53554cb4107a955fe33ccb7686009cac61f1" datatype="html">
+        <source>Inspiration:
+        <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+      </source>
+        <target>Ispirazione:
+        <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-edit/social-rating-edit.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="25c3f737accfa52221ee3064cd8264ca1b1e52d4" datatype="html">
+        <source>Lexicon:
+        <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+      </source>
+        <target>Lessico:
+        <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-edit/social-rating-edit.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76c99972eb36b5a1e26500e9067833c85a623952" datatype="html">
+        <source>Consistency:
+        <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+      </source>
+        <target>Coerenza:
+        <x id="START_TAG_STAR-VIEW" ctype="x-star-view"/><x id="CLOSE_TAG_STAR-VIEW" ctype="x-star-view"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-edit/social-rating-edit.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="19349f26b15ce423139b799252f5dfabdea6ffce" datatype="html">
+        <source>
+      <x id="INTERPOLATION"/> user have voted this chapter for an average:
+      <x id="START_TAG_SOCIAL-RATING-ITEM" ctype="x-social-rating-item"/><x id="CLOSE_TAG_SOCIAL-RATING-ITEM" ctype="x-social-rating-item"/>
+  </source>
+        <target>
+      <x id="INTERPOLATION"/> utenti hanno votato questo capitolo con una media di:
+      <x id="START_TAG_SOCIAL-RATING-ITEM" ctype="x-social-rating-item"/><x id="CLOSE_TAG_SOCIAL-RATING-ITEM" ctype="x-social-rating-item"/>
+  </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shared/social/social-rating-edit/social-rating-edit.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a8c027be3f34b377bddf1c8546bcc80d6b4de8f2" datatype="html">
+        <source>Results in
+            <x id="START_ITALIC_TEXT" ctype="x-i"/><x id="INTERPOLATION"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i"/>
+        </source>
+        <target>Risultati in
+            <x id="START_ITALIC_TEXT" ctype="x-i"/><x id="INTERPOLATION"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/newstories-list/newstories-list.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20576ed15302e3d7c5b8ef0d58b7871f37407adf" datatype="html">
+        <source>No story to show</source>
+        <target>Nessuna storia da visualizzare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/newstories-list/newstories-list.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/social-list/social-list.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/best-user-list/best-user-list.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e892ba15f2c6c17e83510e273b3e10fc32ea016" datatype="html">
+        <source>Search</source>
+        <target>Cerca</target>   
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/search/search.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="981a01055ff5bcf7eea61878660d46364c74e008" datatype="html">
+        <source>Results in
+        <x id="START_ITALIC_TEXT" ctype="x-i"/><x id="INTERPOLATION"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i"/>
+    </source>
+        <target>Risultati in
+        <x id="START_ITALIC_TEXT" ctype="x-i"/><x id="INTERPOLATION"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i"/>
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/market/social-list/social-list.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

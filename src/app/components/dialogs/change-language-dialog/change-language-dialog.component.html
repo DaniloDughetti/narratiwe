@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>Change language</h2>
+<mat-dialog-content>
+    <h3>Your default Story language is {{data.user.storyLanguage}}</h3>
+    <p>That will change the story shown in results and the suggestions for you.</p>
+    <!--Story Language-->
+    <label class = "story-label">Change language</label>
+    <select id='language-a2-select-story' name= "selectedStoryLanguage" [(ngModel)]="selectedStoryLanguage" 
+    (ngModelChange)="onStoryLanguageChanged($event)" class="change-language-form-control">
+        <option *ngFor="let language of storyLanguageList">{{ language }}</option>
+    </select>
+    <!--System Language-->
+<!--
+    <h3>Your default system language is {{data.user.systemLanguage}}</h3>
+    <p>That will change the web app language.</p>
+    
+    <label class = "change-language-label">Change language</label>
+    <select id='language-a2-select-system' name= "selectedSystemLanguage" [(ngModel)]="selectedSystemLanguage" 
+    (ngModelChange)="onSystemLanguageChanged($event)" class="change-language-form-control">
+        <option *ngFor="let language of systemLanguageList">{{ language }}</option>
+    </select>
+-->
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="true" tabindex="1" type = "button" (click)="changeLanguage()">Change</button>
+  <button mat-button mat-dialog-close tabindex="-1" type = "button">Cancel</button>
+</mat-dialog-actions>

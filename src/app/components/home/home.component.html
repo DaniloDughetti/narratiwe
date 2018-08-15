@@ -1,0 +1,10 @@
+<div class="my-container">
+    <ngx-loading [show]="isLoading">
+    </ngx-loading>
+</div>
+
+
+<div class="home-content" *ngIf="isDataLoaded">
+    <navbar [isNew] = "false"></navbar>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,13 @@
+<search></search>
+<div class="spacer"></div>
+<newstories-list [componentTitle]="'Last 10 shared stories'" [initialRecords]="3" [showMoreButton] ="true" [type] = "'shared'"></newstories-list>
+<div class="spacer"></div>
+<newstories-list [componentTitle]="'Last 10 private stories'" [initialRecords]="3" [showMoreButton] ="true" [type] = "'private'"></newstories-list>
+<div class="spacer"></div>
+<social-list [componentTitle]="'Uppest stories'" [initialRecords]="10" [showMoreButton] ="true" [type] = "'ups'" [isProfile] = "false" [id] = "''" [showLanguagesList]="true"></social-list>
+<div class="spacer"></div>
+<social-list [componentTitle]="'Most voted stories'" [initialRecords]="10" [showMoreButton] ="true" [type] = "'ratings'" [isProfile] = "false" [id] = "''" [showLanguagesList]="true"></social-list>
+<div class="spacer"></div>
+<best-user-list [componentTitle]="'World best writers'" [initialRecords]="10" [showMoreButton] ="true" [nation] = "'All'"></best-user-list>
+<div class="spacer"></div>
+<best-user-list *ngIf = "showNationComponent" [componentTitle]="nationComponentTitle" [initialRecords]="10" [showMoreButton] ="true" [nation] = "user.address.state"></best-user-list>

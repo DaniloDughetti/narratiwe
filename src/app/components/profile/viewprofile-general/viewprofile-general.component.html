@@ -1,0 +1,9 @@
+<div class="container" *ngIf="!isLoading">
+    <viewprofile [user]="user" [isEditPossible]="false"></viewprofile>
+    <div class="spacer"></div>
+    <mystories-list [user]="user" [componentTitle]="titleComponentMyStories" [initialRecords]="1" [showMoreButton]="false" [showPublished]="true"></mystories-list>
+    <div class="spacer"></div>
+    <social-list [componentTitle]="titleComponentMostUps" [initialRecords]="10" [showMoreButton] ="true" [type] = "'ups'" [isProfile] = "true" [id] = "user.$key" [showLanguagesList]="false"></social-list>
+    <div class="spacer"></div>
+    <social-list [componentTitle]="titleComponentMostRated" [initialRecords]="10" [showMoreButton] ="true" [type] = "'ratings'" [isProfile] = "true" [id] = "user.$key" [showLanguagesList]="false"></social-list>
+</div>

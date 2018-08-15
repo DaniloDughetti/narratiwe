@@ -1,0 +1,26 @@
+<div *ngIf="isDataExisting && !isLoading">
+  <div class="rating-container" *ngIf="!isAlreadyRated">
+    <div>
+      <p>Grammar:
+        <star-view [selectedStar]="rating.grammar" [inputEnabled]="true" (starSelected)="starGrammarEmitter($event)"></star-view>
+      </p>
+      <p>Inspiration:
+        <star-view [selectedStar]="rating.inspiration" [inputEnabled]="true" (starSelected)="starInspirationEmitter($event)"></star-view>
+      </p>
+      <p>Lexicon:
+        <star-view [selectedStar]="rating.lexicon" [inputEnabled]="true" (starSelected)="starLexiconEmitter($event)"></star-view>
+      </p>
+      <p>Consistency:
+        <star-view [selectedStar]="rating.consistency" [inputEnabled]="true" (starSelected)="starConsistencyEmitter($event)"></star-view>
+      </p>
+      <p>
+          <button mat-button color="primary" type = "button" (click)="voteClicked()" *ngIf="!voteDisabled" i18nv>Vote</button>
+          <button mat-button color="primary" type = "button" (click)="voteClicked()" disabled *ngIf="voteDisabled" i18nv>Vote</button>
+        </p>
+    </div>
+  </div>
+  <div class = "rating-container" *ngIf="isAlreadyRated">
+      {{chapter.ratingNumber}} user have voted this chapter for an average:
+      <social-rating-item [viewType]="'full'" [rating]="rating"></social-rating-item>
+  </div>
+</div>

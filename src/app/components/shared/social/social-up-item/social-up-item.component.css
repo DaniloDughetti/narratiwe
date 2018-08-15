@@ -1,0 +1,12 @@
+.fa-up{
+    color: #cacaca;
+}
+.fa-upped{    
+    color: rgba(59, 122, 149, 0.7) !important;
+}
+.up-container{
+    cursor: pointer;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}

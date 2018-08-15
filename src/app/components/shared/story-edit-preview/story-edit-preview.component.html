@@ -1,0 +1,51 @@
+<div class="container" *ngIf="!isLoading">
+    <div class="row">
+        <div class="row">
+            <div class="col col-lg-2">
+            </div>
+            <div class="col-md-auto">
+
+                <mat-card class="material-card newstory-card">
+                    <mat-card-title>Edit story!</mat-card-title>
+                    <mat-card-content>
+                        <form class="edit-story-form">
+
+                            <!--Title-->
+                            <mat-form-field class="edit-story-input">
+                                <input matInput placeholder="Title" [(ngModel)]="story.title" name="title" value="story.title" (ngModelChange)="formNotify($event)">
+                            </mat-form-field>
+
+                            <!--Description-->
+                            <mat-form-field class="edit-story-input">
+                                <input matInput placeholder="Description (A brief preview)" [(ngModel)]="story.description" name="description" value="story.description"
+                                    (ngModelChange)="formNotify($event)">
+                            </mat-form-field>
+
+                            <!--Language-->
+                            <label class="story-label">Language</label>
+                            <select id='language-a2-select' name="selectedLanguage" [(ngModel)]="selectedLanguage" (ngModelChange)="onLanguageChanged($event)"
+                                class="story-form-control">
+                                <option [value]='selectedLanguage' *ngFor="let language of languageList">{{ language }}</option>
+                            </select>
+
+                            <!--Kind-->
+                            <label class="story-label">Kind</label>
+                            <select id='kind-select' name="selectedKind" [(ngModel)]="selectedKind" (ngModelChange)="onKindChanged($event)" class="story-form-control">
+                                <option [value]='kind.value' *ngFor="let kind of kindList">{{ kind.viewValue }}</option>
+                            </select>
+                            <!--Image-->
+                            <upload-form (uploadResult)="imageUploadEmitter($event)" [namefile]="imageUUID"></upload-form>
+                        </form>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button color="primary" type="button" (click)="backClicked()">Back</button>
+                        <button mat-button color="primary" type="button" (click)="openDeleteDialog()">Delete</button>
+                        <button mat-button color="primary" type="button" (click)="updateStory()">Done</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+    </div>
+</div>

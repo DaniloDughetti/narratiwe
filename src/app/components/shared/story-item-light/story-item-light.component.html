@@ -1,0 +1,38 @@
+<div class="story-item-container container-fluid">
+  <div class="row row-light" *ngIf="!isLoading">
+    <div class="col-xs-1 col-md-1 col-lg-1">
+      <p class="vote" *ngIf="showVote">{{vote | number:'1.0-1' }}</p>
+    </div>
+    <div class="col-xs-1 col-md- col-lg-1 image-col">
+      <div *ngIf="!isImageLoading" class="image-container">
+        <img *ngIf="storyImage" [src]="storyImage" class="img-responsive img-story" alt="Profile image">
+        <img *ngIf="!storyImage" src="../../../assets/images/book.png" class="img-responsive img-story" alt="Profile image">
+      </div>
+    </div>
+
+    <div class="col-xs-9 col-md-9 col-lg-9">
+      <div class="container-fluid">
+        <div class="col">
+          <div class="row">
+            <b>{{story.title | capitalize:true }}</b>
+          </div>
+          <div class="row">
+            <p *ngIf="!user.showNickname && user.name">{{user.name}}</p>
+            <p *ngIf="!user.showNickname && user.surname"> {{user.surname}}</p>
+            <p *ngIf="user.showNickname && user.nickname"> {{user.nickname}}</p>
+            <p *ngIf="user.showNickname && !user.nickname"> {{user.email}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-1 col-md-1 col-lg-1">
+    </div>
+    <div *ngIf="isStoryPrivate" class="story-type">
+      <i class="fa-private fa fa-lock" aria-hidden="true"></i>
+    </div>
+    <div *ngIf="!isStoryPrivate" class="story-type">
+      <i class="fa-shared fa fa-unlock" aria-hidden="true"></i>
+    </div>
+
+  </div>
+</div>

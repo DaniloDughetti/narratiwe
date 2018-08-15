@@ -1,0 +1,57 @@
+<navbar [isNew]="true"></navbar>
+<div class="container">
+  <div class="row">
+    <div class="row">
+      <div class="col col-lg-2">
+
+      </div>
+      <div class="col-md-auto">
+        <mat-card class="material-card profile-card" *ngIf="!isLoading">
+          <mat-card-title>Edit profile</mat-card-title>
+          <mat-card-content>
+            <form class="edit-profile-form">
+              <p class="p-verification" *ngIf="isEmailType">A verification email is sent to {{user.email}}, check your email client<br>
+                If not received, 
+                <button mat-button color="primary" type="button" (click)="sendVerificationEmail()">try again</button>
+              </p>
+              <!--NIckname-->
+              <mat-form-field class="edit-profile-input">
+                <input matInput placeholder="Nickname" [(ngModel)]="nickname" name="nickname" value="nickname" (ngModelChange)="nicknameNotify($event)">
+              </mat-form-field>
+
+              <div *ngIf="!deleteAlert && isNicknameExisting" class="alert alert-danger alert-custom" role="alert">
+                {{ nicknameAlert }}
+              </div>
+              <div *ngIf="!deleteAlert && !isNicknameExisting && !isNicknameCorrect" class="alert alert-danger alert-custom" role="alert">
+                  {{ nicknameAlertLength }}
+                </div>
+              <!--Name-->
+              <mat-form-field class="edit-profile-input">
+                <input matInput placeholder="Name" [(ngModel)]="name" name="name" value="name">
+              </mat-form-field>
+
+              <!--Surname-->
+              <mat-form-field class="edit-profile-input">
+                <input matInput placeholder="Surname" [(ngModel)]="surname" name="surname" value="surname">
+              </mat-form-field>
+
+              <!--Language-->
+              <label class="profile-label">Language</label>
+              <select id='language-a2-select' name="selectedLanguage" [(ngModel)]="selectedLanguage" (ngModelChange)="onLanguageChanged($event)"
+                class="profile-form-control">
+                <option [value]='language' *ngFor="let language of languageList">{{ language }}</option>
+              </select>
+
+            </form>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button *ngIf="enableButton" color="primary" type="button" (click)="updateUser()">Done</button>
+            <button mat-button *ngIf="!enableButton" disabled color="primary" type="button" (click)="updateUser()">Done</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="col col-lg-2">
+
+      </div>
+    </div>
+  </div>

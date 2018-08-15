@@ -1,0 +1,70 @@
+<mat-card class="material-card" *ngIf="!isLoading">
+  <mat-card-content>
+    <form class="search-form">
+      <div class="container" *ngIf="!isListLoading">
+        <div class="row">
+          <div class="col-xs-12 col-md-11 col-lg-11">
+            <mat-form-field class="search-input">
+              <input matInput placeholder="'Search For Title'" [(ngModel)]="search.title" name="title" value="title">
+            </mat-form-field>
+          </div>
+          <div class="col-xs-12 col-md-1 col-lg-1">
+            <button mat-button color="primary" class="search-button" type="button" (click)="searchClicked()">Search</button>
+          </div>
+        </div>
+        <div class="row" *ngIf="showedMore">
+          <div class="col search-col">
+            <!--Language-->
+            <label class="search-label">Language</label>
+            <select id='language-a2-select' name="selectedLanguage" [(ngModel)]="selectedLanguage" (ngModelChange)="onLanguageChanged($event)">
+              <option *ngFor="let language of languageList">{{ language }}</option>
+            </select>
+            <!--Kind-->
+            <label class="search-label">Kind</label>
+            <select id='kind-select' name="selectedKind" [(ngModel)]="selectedKind" (ngModelChange)="onKindChanged($event)">
+              <option [value]='kind.value' *ngFor="let kind of kindList">{{ kind.viewValue }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <div *ngIf="!showedMore" class="show-more-button" (click)="showMoreStories()">
+      <i class="fa-show-more fa fa-angle-down fa-2x" aria-hidden="true"></i>
+    </div>
+    <div *ngIf="showedMore" class="show-more-button" (click)="showLessStories()">
+      <i class="fa-show-more fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    </div>
+  </mat-card-actions>
+</mat-card>
+<div class="spacer"></div>
+<mat-card class="material-card">
+  <mat-card-title>
+    Story result
+  </mat-card-title>
+  <mat-card-content>
+    <div class="container" *ngIf="!isListLoading">
+      <div class="row">
+        <div class="col" *ngIf="isDataExisting">
+          <ul class="story-list">
+            <li *ngFor="let story of stories">
+              <story-item-light [story]="story" [showVote] = "false" [vote] = "0" (click)="showStoryPreview(story.$key)"></story-item-light>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col" *ngIf="!isDataExisting">
+          <ul class="story-list">
+            <li>
+              No results.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="primary" type="button" (click)="backClicked()">Back</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,26 @@
+<mat-card class= "material-card">
+    <mat-card-title>
+        {{componentTitle}}
+      </mat-card-title>
+    <mat-card-content>
+        <div class="container" *ngIf= "!isListLoading">
+            <div class="row">
+                <div class="col" *ngIf="isDataExisting">
+                    <ul class = "story-list">
+                        <li >
+                            <story-item [story] = "story" [showVote] = "false" [vote] = "0" (click) = "readStory()"></story-item>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col" *ngIf="!isDataExisting">
+                        <ul class = "story-list">
+                            <li class="no-results">
+                                Come read one!
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+    

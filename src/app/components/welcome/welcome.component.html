@@ -1,0 +1,87 @@
+<div class="container-fluid" id="welcome-container">
+  <div class="row">
+    <div class="col">
+      <login (displayDialog)="openModal($event)"></login>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col button-tour">
+      <button mat-button (click)="scroll(target)" type="button" class="tour-button">
+        <i class="fa fa-chevron-down fa-2x" aria-hidden="true" type="button"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div #target class="container-fluid tour-container" *ngIf="isDescriptionVisible">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <img class="left-tour" src="assets/images/tour-1.png">
+    </div>
+    <div class="col-sm-6">
+      <div class="text-tour">
+        Register and discover everyday new brilliant stories written by writers all over the world.
+        <br> You can read, rate, vote and comment them making underground writers work funny and why not famous!
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="text-tour">
+        There are two story type: Shared and private.
+        In the first one everyone can continue the story writing a chapter!
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img class="right-tour" src="assets/images/tour-2.png">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <img class="left-tour" src="assets/images/tour-3.png">
+    </div>
+    <div class="col-sm-6">
+      <div class="text-tour">
+        To write is never been so easy with all the html tools you are used to use!
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="text-tour">
+        One time you publish your chapter, you'll see it in the chapter list and users will able to comment, vote or rate it:
+        Become the most known author in Narratiwe!  
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img class="right-tour" src="assets/images/tour-4.png">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <img class="left-tour" src="assets/images/tour-5.png">
+    </div>
+    <div class="col-sm-6">
+      <div class="text-tour">
+        Are you a solitary writer? Don't bother, you can create a private story, and, once you finish it you can publish it on the market, when everybody will be able to read, comment or rate it!
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="text-tour">
+        In the end, take the confort to read all your works, by mobile too, enjoy the Narratiwe experience!  
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img class="right-tour" src="assets/images/tour-6.png">
+    </div>
+  </div>
+</div>

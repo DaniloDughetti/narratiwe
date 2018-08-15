@@ -1,0 +1,120 @@
+<div class="container">
+  <div class="row">
+    <div class="row">
+      <div class="col col-lg-2">
+      </div>
+      <div class="col-md-auto">
+
+        <mat-card class="material-card previewchapter-card" *ngIf="!isLoading">
+          <mat-card-title>
+            <b>#{{chapter.index +1}}</b> {{chapter.title | capitalize:true }}</mat-card-title>
+          <mat-card-content>
+
+            <div class="container">
+              <!--Chapter content-->
+              <div class="row">
+                <div class="col-ms-2 col-md-1 col-lg-1 align-col">
+                  <button mat-button class="chapter-arrow" color="primary" type="button" (click)="goToPreviousChapter()" disabled *ngIf="!canGoBack"
+                   >
+                    <i class="fa fa-chevron-left fa-2x" aria-hidden="true" type="button"></i>
+                  </button>
+                  <button mat-button class="chapter-arrow" color="primary" type="button" (click)="goToPreviousChapter()" *ngIf="canGoBack"
+                   >
+                    <i class="fa fa-chevron-left fa-2x fa-ok" aria-hidden="true" type="button"></i>
+                  </button>
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-10">
+                  <div class="chapter-content">
+                    <markdown-to-html [data]="chapter.content"></markdown-to-html>
+                  </div>
+                </div>
+
+                <div class="col-ms-2 col-md-1 col-lg-1 align-col">
+                  <button mat-button class="chapter-arrow" color="primary" type="button" (click)="goToNextChapter()" disabled *ngIf="!canGoNext"
+                   >
+                    <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+                  </button>
+                  <button mat-button class="chapter-arrow" color="primary" type="button" (click)="goToNextChapter()" *ngIf="canGoNext">
+                    <i class="fa fa-chevron-right fa-2x fa-ok" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+
+        </mat-card>
+
+        <mat-card class="material-card control-card" *ngIf="!isLoading">
+          <mat-card-content>
+
+            <button mat-button class="chapter-arrow" id="left" color="primary" type="button" (click)="goToPreviousChapter()" [disabled]="!canGoBack"
+             >
+              <i class="fa fa-chevron-left fa-2x" aria-hidden="true" type="button"></i>
+            </button>
+
+            <button mat-button class="chapter-arrow" id="right" color="primary" type="button" (click)="goToNextChapter()" [disabled]="!canGoNext"
+             >
+              <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+            </button>
+
+          </mat-card-content>
+        </mat-card>
+
+
+
+        <mat-expansion-panel class="material-expansion info-expansion">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <b>Informations</b>
+              </mat-panel-title>
+              <mat-panel-description>
+                
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+           <!--Chapter info-->
+           <div class="container" *ngIf="!isLoading">
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-list>
+                    <mat-list-item class="user-link" (click)="viewUser()">
+                      <mat-icon mat-list-icon>
+                        <i class="fa-custom fa fa-user" aria-hidden="true"></i>
+                      </mat-icon>
+                      <h4 mat-line *ngIf="!user.showNickname && user.name && user.surname">{{chapterUser.name}} {{chapterUser.surname}}</h4>
+                      <h4 mat-line *ngIf="!user.showNickname && !user.name && !user.surname">{{chapterUser.email}}</h4>
+                      <h4 mat-line *ngIf="user.showNickname && user.nickname">{{chapterUser.nickname}}</h4>
+                      <h4 mat-line *ngIf="user.showNickname && !user.nickname">{{chapterUser.email}}</h4>
+                      <p mat-line class="story-description">Author </p>
+                    </mat-list-item>
+                  </mat-list>
+                </div>
+                <div class="col-md-6">
+                  <mat-list>
+                    <mat-list-item>
+                      <mat-icon mat-list-icon>
+                        <i class="fa-custom fa fa-pencil" aria-hidden="true"></i>
+                      </mat-icon>
+                      <h4 mat-line *ngIf="story.dateEditing">{{chapter.dateEditing | date}}</h4>
+                      <h4 mat-line *ngIf="!story.dateEditing">Last edit unknown</h4>
+                      <p mat-line class="story-description">Last edit</p>
+                    </mat-list-item>
+                  </mat-list>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel>
+
+        <mat-card class="material-card actions-card" *ngIf="!isLoading">
+          <mat-card-content>
+            <button mat-button color="primary" type="button" (click)="goToChapterPreviewClicked()">Return to chapter summary</button>
+            <button mat-button color="primary" type="button" (click)="goToStoryPreviewClicked()">Return to story summary</button>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+
+      <div class="col col-lg-2">
+
+      </div>
+    </div>
+  </div>

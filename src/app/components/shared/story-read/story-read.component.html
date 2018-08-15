@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col col-lg-2">
+            </div>
+            <div class="col-md-auto">
+
+                <mat-card class="material-card previewchapter-card" *ngIf="!isListLoading">
+                    <mat-card-title>
+                        {{story.title | capitalize:true }}</mat-card-title>
+                    <mat-card-content>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col" *ngIf="!isChapterListEmpty">
+                                    <ul class="chapter-list">
+                                        <li *ngFor="let chapter of chapters">
+                                            <story-read-item [chapter]="chapter"></story-read-item>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col" *ngIf="isChapterListEmpty">
+                                    <p class="resultStoryLabel">No Chapter to show</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </mat-card-content>
+                    <mat-card-actions>
+                            <button mat-button color="primary" type="button" (click)="backClicked()">Back</button>
+                            <button mat-button color="primary" type="button" (click)="newChapter()">Add new chapter</button>
+                        </mat-card-actions>
+                </mat-card>
+
+
+            </div>
+
+            <div class="col col-lg-2">
+
+            </div>
+        </div>
+    </div>

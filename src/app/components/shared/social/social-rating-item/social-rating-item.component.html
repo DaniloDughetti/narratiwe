@@ -1,0 +1,26 @@
+<div class="rating-container" *ngIf="rating">
+    <div *ngIf="isLightView">
+        <star-view [selectedStar]="rating.total" [inputEnabled]="false"></star-view>
+    </div>
+    <div *ngIf="!isLightView">
+        <p>Grammar:
+            <star-view [selectedStar]="rating.grammar" [inputEnabled]="false"></star-view>
+        </p>
+        <p>Inspiration:
+            <star-view [selectedStar]="rating.inspiration" [inputEnabled]="false"></star-view>
+        </p>
+        <p>Lexicon:
+            <star-view [selectedStar]="rating.lexicon" [inputEnabled]="false"></star-view>
+        </p>
+        <p>Consistency:
+            <star-view [selectedStar]="rating.consistency" [inputEnabled]="false"></star-view>
+        </p>
+        <p>Total:
+            <star-view [selectedStar]="rating.total" [inputEnabled]="false"></star-view>
+        </p>
+    </div>
+</div>
+
+<div *ngIf="!rating">
+    There's no chapter rating yet
+</div>

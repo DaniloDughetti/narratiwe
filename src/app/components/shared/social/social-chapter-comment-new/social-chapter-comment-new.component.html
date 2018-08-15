@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-3 col-lg-3">
+      <img *ngIf="profileImage" [src]="profileImage" class="img-responsive img-circle img-profile" alt="Profile image">
+      <b class="comment-user">{{user.name}}{{user.surname}}</b>
+    </div>
+    <div class="col-xs-12 col-md-8 col-lg-8">
+      <form class="edit-profile-form">
+        <mat-form-field class="comment-form">
+          <textarea matInput placeholder="'Write a comment'" [(ngModel)]="content" name="content"></textarea>
+        </mat-form-field>
+        <button mat-button class="comment-button" color="primary" type = "button" (click)="createComment()" *ngIf="!publishDisabled">Publish</button>
+        <button mat-button class="comment-button" color="primary" type = "button" (click)="createComment()" *ngIf="publishDisabled" disabled>Publish</button>
+       </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<mat-card class="material-card" *ngIf="!isLoading">
+  <mat-card-content>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-4 col-md-2 col-lg-2">
+          <social-up-item [story]="story" [ups]="ups"></social-up-item>
+        </div>
+        <div class="col-xs-8 col-md-9 col-lg-9">
+          <social-rating-item [rating]="rating" [viewType]="'light'" class = "rating-container" ></social-rating-item>
+        </div>
+      </div>
+
+    </div>
+  </mat-card-content>
+</mat-card>

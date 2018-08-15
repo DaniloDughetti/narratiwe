@@ -1,0 +1,38 @@
+<mat-card class="material-card">
+    <mat-card-title>
+        {{componentTitle}}
+        <div class="change-language" type="button" (click)="openLanguage()" *ngIf="!isLanguageOpen">Results in
+            <i>{{selectedLanguage}}</i>
+        </div>
+        <div class="change-language" *ngIf="isLanguageOpen">
+            <select id='language-a2-select' name="selectedLanguage" [(ngModel)]="selectedLanguage" (ngModelChange)="onLanguageChanged($event)"
+                class="profile-form-control">
+                <option [value]='language' *ngFor="let language of languageList">{{ language }}</option>
+            </select>
+        </div>
+    </mat-card-title>
+    <mat-card-content>
+        <div class="container" *ngIf="!isListLoading">
+            <div class="row">
+                <div class="col" *ngIf="!isListEmpty">
+                    <ul class="story-list">
+                        <li *ngFor="let story of stories | storyDatepublished | slice:0:tempRecords">
+                            <story-item [story]="story" [showVote]="false" [vote]="0" (click)="showStoryPreview(story.$key)"></story-item>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col" *ngIf="isListEmpty">
+                    <p class="resultStoryLabel">No story to show</p>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions *ngIf="showMoreButton">
+        <div *ngIf="!showedMore" class="show-more-button" (click)="showMoreStories()">
+            <i class="fa-show-more fa fa-angle-down fa-2x" aria-hidden="true"></i>
+        </div>
+        <div *ngIf="showedMore" class="show-more-button" (click)="showLessStories()">
+            <i class="fa-show-more fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </div>
+    </mat-card-actions>
+</mat-card>

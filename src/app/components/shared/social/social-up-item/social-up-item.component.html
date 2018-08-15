@@ -1,0 +1,11 @@
+<div class = "up-container" (click) = "upClicked()" *ngIf="!upDisabled">
+    <i *ngIf="!isUpped" class="fa-up fa fa-arrow-up" aria-hidden="true"></i> 
+    <i *ngIf="isUpped" class="fa-upped fa fa-arrow-up" aria-hidden="true"></i> 
+    {{upsNumber}}
+</div>
+
+<div class = "up-container" *ngIf="upDisabled">
+        <i *ngIf="!isUpped" class="fa-up fa fa-arrow-up" aria-hidden="true"></i> 
+        <i *ngIf="isUpped" class="fa-upped fa fa-arrow-up" aria-hidden="true"></i> 
+        {{upsNumber}}
+</div>

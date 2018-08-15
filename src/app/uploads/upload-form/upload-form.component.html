@@ -1,0 +1,15 @@
+<div *ngIf="currentUpload">
+  <div class="progress">
+    <div class="progress-bar progress-bar-animated" [ngStyle]="{ 'width': currentUpload?.progress + '%' }"></div>
+  </div>
+  Upload {{currentUpload?.progress}}% complete
+</div>
+    <label>
+       <input type="file" accept="image/x-png, image/png, image/gif, image/jpeg" (change)="detectFiles($event)">
+    </label>
+    <button mat-raised-button
+            class= "upload-button"
+            [disabled]="!selectedFiles"
+            (click)="uploadCustomUserImage()">
+      Upload image
+  </button>

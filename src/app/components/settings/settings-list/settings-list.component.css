@@ -1,0 +1,39 @@
+.settings-link{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.settings-button{
+    width: 100%;
+    text-align: left;
+}
+.story-item-container:hover{
+    background-color: #F5F5F5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+ 
+.setting-toggle{
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+ /*Small devices (landscape phones, 576px and up)*/
+ @media (max-width: 767px) {
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+}

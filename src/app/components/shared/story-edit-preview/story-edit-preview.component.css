@@ -1,0 +1,60 @@
+.edit-story-form {
+    width: 100%;
+  }
+  
+  .edit-story-input {
+    width: 100%;
+  }
+
+  .story-form-control{
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+  .story-label{
+    color: rgba(117, 117, 117, 255);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    line-height: 1.125;
+    font-size:11px;    
+  }
+
+  ::ng-deep snack-bar-container.info-class {
+    background: gray;
+  }
+  
+  ::ng-deep .info-class .mat-simple-snackbar {
+    color: black;
+    font-weight: bold;
+  }
+
+  ::ng-deep snack-bar-container.error-class {
+    background: red;
+  }
+  
+  ::ng-deep .error-class .mat-simple-snackbar {
+    color: white;
+    font-weight: bold;
+  }
+
+  /*Small devices (landscape phones, 576px and up)*/
+  @media (max-width: 767px) {
+    .newstory-card{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+}
+

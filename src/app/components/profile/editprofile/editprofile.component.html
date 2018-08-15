@@ -1,0 +1,66 @@
+<mat-card class="material-card profile-card">
+  <mat-card-title>Edit profile</mat-card-title>
+  <mat-card-content>
+    <form class="edit-profile-form">
+      <!--NIckname-->
+      <mat-form-field class="edit-profile-input">
+        <input matInput placeholder="Nickname" [(ngModel)]="user.nickname" name="nickname" value="user.nickname" (ngModelChange)="nicknameNotify($event)">
+      </mat-form-field>
+      <div *ngIf="isNicknameExisting" class="alert alert-danger alert-custom" role="alert">
+        {{ nicknameAlert }}
+      </div>
+      <div *ngIf="!deleteAlert && !isNicknameExisting && !isNicknameCorrect" class="alert alert-danger alert-custom" role="alert">
+        {{ nicknameAlertLength }}
+      </div>
+      <!--Name-->
+      <mat-form-field class="edit-profile-input">
+        <input matInput placeholder="Name" [(ngModel)]="user.name" name="name" value="user.name" (ngModelChange)="formNotify($event)">
+      </mat-form-field>
+      <!--Surname-->
+      <mat-form-field class="edit-profile-input">
+        <input matInput placeholder="Surname" [(ngModel)]="user.surname" name="surname" value="user.surname" (ngModelChange)="formNotify($event)">
+      </mat-form-field>
+      <!--Birthday-->
+      <mat-form-field class="edit-profile-input">
+        <input matInput [matDatepicker]="picker" placeholder="Birthday" [(ngModel)]="user.birthday" name="birthday" (ngModelChange)="formNotify($event)">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker touchUi="true" #picker></mat-datepicker>
+      </mat-form-field>
+      <!--Address-->
+      <mat-form-field class="edit-profile-input">
+        <input matInput placeholder="Address" [(ngModel)]="address.address" name="address" value="address.address" (ngModelChange)="formNotify($event)">
+      </mat-form-field>
+      <!--City-->
+      <mat-form-field class="edit-profile-input">
+        <input matInput placeholder="City" [(ngModel)]="address.city" name="city" value="address.city" (ngModelChange)="formNotify($event)">
+      </mat-form-field>
+
+      <!--Country-->
+      <label class="profile-label">Country</label>
+      <select id='country-a2-select' name="selectedCountry" [(ngModel)]="selectedCountry" (ngModelChange)="onCountryChanged($event)"
+        class="profile-form-control">
+        <option [value]='country' *ngFor="let country of countriesList">{{ country }}</option>
+      </select>
+
+      <!--Language-->
+      <label class="profile-label">Language</label>
+      <select id='language-a2-select' name="selectedLanguage" [(ngModel)]="selectedLanguage" (ngModelChange)="onLanguageChanged($event)"
+        class="profile-form-control">
+        <option [value]='language' *ngFor="let language of languageList">{{ language }}</option>
+      </select>
+
+      <!--PostalCode-->
+      <mat-form-field class="edit-profile-input">
+        <input matInput placeholder="Postal Code" [(ngModel)]="address.postalCode" name="postalCode" value="address.postalCode" (ngModelChange)="formNotify($event)">
+      </mat-form-field>
+
+      <!--Image-->
+      <upload-form [namefile]="'profile'" (uploadResult)="uploadDone($event)"></upload-form>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="primary" type="button" (click)="backClicked()">Back</button>
+    <button mat-button *ngIf="enableButton" color="primary" type="button" (click)="updateUser()">Done</button>
+    <button mat-button *ngIf="!enableButton" disabled color="primary" type="button" (click)="updateUser()">Done</button>
+  </mat-card-actions>
+</mat-card>

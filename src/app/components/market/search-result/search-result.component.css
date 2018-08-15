@@ -1,0 +1,43 @@
+.search-form {
+    width: 100%;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+
+  .search-button{
+    position: relative;
+    right: 10px;
+  }
+
+  .advanced-search{
+    margin-left: 18px;
+  }
+
+  .search-label{
+    color: rgba(117, 117, 117, 255);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    line-height: 1.125;
+    font-size:11px;    
+    display: block;
+  }
+
+  .search-col{
+    padding-left: 15px;
+    padding-right: 30px;
+  }
+
+  #language-a2-select{
+    width: 100%;
+  }
+  
+  #kind-select{
+    width: 100%;
+  }
+
+  ul{
+    list-style-type: none;
+    margin-left: -50px;
+  }
