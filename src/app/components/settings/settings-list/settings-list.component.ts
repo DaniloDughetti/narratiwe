@@ -86,8 +86,16 @@ export class SettingsListComponent implements OnInit {
       this.dataService.manageError(e.message, "setting-list.component");
     }
   }
-
-
+  
+  private DeleteUser() {
+    this.userService.deleteUser(this.user.$key)
+      .then(() => {      
+          this.dataService.openCustomSnackBar("User is successfully removed ", "error");
+      })
+      .catch(() => {
+        this.dataService.openCustomSnackBar("There is an error while deleting the user, please try again", "error");
+      });
+  }
   private updateUser() {
     this.userService.updateUser(this.user.$key, this.user)
       .then(() => {
